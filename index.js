@@ -49,7 +49,7 @@ app.post("/upload", (req, res) => {
 
 `;
 
-    // no queue because of POC, not to be used in production
+    
     exec(ffmpegCommand, (error, stdout, stderr) => {
       if (error) {
         console.log(`exec error: ${error}`);
